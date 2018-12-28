@@ -15,13 +15,22 @@ def is_prime(a,primes,c):
 total = 0
 primes =[2]
 
-for i in range(3,2000000,2):
+ulo= 600851475143
+
+for i in range(3,int(math.sqrt(ulo)),2):
 	 if(is_prime(i,primes,primes[-1])==1):
 		primes.append(i)
-		total += i
+	
 
 		
 # apparently 3 will not miss
 total += 2 #for the missing 2
 print total 
 
+factor =[]
+
+for i in primes:
+	if ((ulo%i)==0):
+		factor.append(i)
+
+print factor
