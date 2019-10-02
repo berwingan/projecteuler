@@ -12,4 +12,4 @@ def num_at(li,a):
 li =[1,10,100,1000,10000,100000,1000000]
 b  = num_at(li,1000000)
 
-print b
+print(b)
